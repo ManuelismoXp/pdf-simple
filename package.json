@@ -1,0 +1,23 @@
+{
+  "name": "sample-pdf",
+  "version": "0.0.5",
+  "description": "",
+  "keywords":["pdf", "document"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "dev": "nodemon --watch \"src//\" --exec \"ts-node src/sample.ts\" -e ts"
+  },
+  "author": "Lukau Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
