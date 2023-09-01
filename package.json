@@ -1,6 +1,6 @@
 {
-  "name": "sample-pdf",
-  "version": "0.0.5",
+  "name": "pdf-simple",
+  "version": "0.0.9",
   "description": "",
   "keywords":["pdf", "document"],
   "main": "dist/index.js",

@@ -1,11 +1,11 @@
-# SIMPLE PDF
+# PDF SIMPLE
 
 In a first phase this package will help in the creation of tables in the process of creating a pdf using jspdf.
 
 ## Installation
 
 ```bash
-npm install simple-pdf
+npm install pdf-simple
 ```
 
 ## Usage
@@ -13,16 +13,16 @@ npm install simple-pdf
 The code below generates a blank pdf file.
 
 ```typescript
-import { SimplePDF, save } from 'simple-pdf';
+import { pdfSimple, save } from 'pdf-simple';
 
-const pdf = SimplePDF();
+const pdf = pdfSimple();
 
 save(pdf, 'example.pdf');
 ```
 
 ## Features
 
-Here are some of the main features offered by simple-pdf
+Here are some of the main features offered by pdf-simple
 
 ### simpleTable
 
@@ -35,13 +35,13 @@ simpleTable(pdf, x, y, headers, headerheight, dataset, border): void
 
 ```typescript
 // Example
-import { SimplePDF, save, simpleTable } from 'simple-pdf';
+import { pdfSimple, save, simpleTable } from 'pdf-simple';
 
-const pdf = SimplePDF();
+const pdf = pdfSimple();
 
-simpleTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]]); // borderless
+simpleTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']]); // borderless
 
-simpleTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]], true); // with borde
+simpleTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']], true); // with borde
 
 save(pdf, 'example.pdf'); 
 ```
@@ -57,13 +57,13 @@ stripedTable(pdf, x, y, headers, headerheight, dataset, border): void
 
 ```typescript
 // Example
-import { SimplePDF, save, stripedTable } from 'simple-pdf';
+import { pdfSimple, save, stripedTable } from 'pdf-simple';
 
-const pdf = SimplePDF();
+const pdf = pdfSimple();
 
-stripedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]]); // borderless
+stripedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']]); // borderless
 
-stripedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]], true); // with borde
+stripedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']], true); // with borde
 
 save(pdf, 'example.pdf'); 
 ```
@@ -79,20 +79,20 @@ spacedTable(pdf, x, y, headers, headerheight, dataset, border): void
 
 ```typescript
 // Example
-import { SimplePDF, save, spacedTable } from 'simple-pdf';
+import { pdfSimple, save, spacedTable } from 'pdf-simple';
 
-const pdf = SimplePDF();
+const pdf = pdfSimple();
 
-spacedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]]); // borderless
+spacedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']]); // borderless
 
-spacedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa', 'M', 12]], true); // with borde
+spacedTable( pdf, 30, 60, [{ text: 'Nome', width: 60 }], 7, [['Élvio Sadoc da Silva e Sousa']], true); // with borde
 
 save(pdf, 'example.pdf'); 
 ```
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request. [github](https://github.com/ManuelismoXp/simple-pdf)
+Contributions are welcome! Feel free to open an issue or submit a pull request. [github](https://github.com/ManuelismoXp/pdf-simple)
 
 
 ## License
